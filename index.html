@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<style>    
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;
+    background: url(https://goo.gl/AzfWo7) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+body { 
+    font-size: 13px; 
+    color: #191919;  
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: default;
+    }
+    
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; 
+    color: black;
+    
+    }	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	width: 90%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 5%;
+    padding-top: 2%;
+    color: grey;
+	} 
+
+	#servicios {
+		width: 100%;
+		float: left;
+        background-color: white;
+		}		
+   
+   #comprar{
+		width: 100%;
+		float: left;
+        background-color: #EFEFEF;
+		}	
+		
+    header{
+        background: url(https://2.bp.blogspot.com/-wpmCMSFJzwc/WNKBatqHQxI/AAAAAAAAEL8/isRht7C32YkfJEQEvcNHjq3fnR4NfxSaACLcB/s1600/menu-bg.png) 0 0;
+        background-repeat: repeat-x;
+         width: 100%;
+        height: 70px;
+       
+        top:0;
+        clear: both;
+        z-index: 56;
+    }
+    #headercontent{
+        width: 94%;
+        margin: auto;
+    }
+    
+    
+/* Logo H1 */
+header h1 {
+	height: 70px;
+	width: 160px;
+	float: left;
+	display: block;
+	background: url(https://goo.gl/3FK2fg) 0 0;
+    background-size: 100%;
+	text-indent: -9999px;
+	}
+		
+/* Nav */
+header nav {
+	float: right;
+	margin-top: 20px;
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+    
+        header nav li a{
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 2em;
+            color: #999999;
+            -webkit-transition: color 0.3s ease-out;
+            -moz-transition: color 0.3s ease-out;
+            -o-transition: color 0.3s ease-out;
+            transition: color 0.3s ease-out;
+            }
+    header nav li a:hover {
+            color: white;
+            }
+
+
+/* Banner */			
+#banner {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+    }
+    
+    #slideshow {
+        width: 100%;
+        }
+    
+    #slideshow > div{
+        position: relative;
+    }
+    
+    #slideshow img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        left:0;
+        right:0;
+        }
+    
+    #dummy{
+        padding-bottom: 58%;
+    }
+	
+    
+    #servtitle{
+        height: 60px;
+        width: 92%;
+        display: inline;
+        margin-left: 4%;
+        margin-top: 40px;
+        font-size: 1.3em;
+        font-weight: 200;
+        color:black;
+        text-align: center;
+        }
+   
+    
+    
+    .serv{
+        float: left;
+        width: 92%;
+        height: 180px;
+        margin-left: 4%;
+        margin-bottom: 25px;
+        display: table;
+        -webkit-transition: color 0.5s ease-out;
+        -moz-transition: color 0.5s ease-out;
+        -o-transition: color 0.5s ease-out;
+        transition: color 0.5s ease-out;
+        }
+    
+    .service{
+        display: table-cell;
+	    vertical-align: middle;
+        font-size: 1.6em;
+        text-align: center;
+        line-height: 1.6em;
+        color:black;
+        width: 90%;
+        }
+
+    .service > p{
+        font-weight: 600;
+        padding-top: 4em;
+        padding-bottom: 4em;
+        }
+    .service > p:hover{
+        color:white;
+        cursor: pointer;
+        }
+    
+    .overlay{
+        background-color: rgba(255,255,255,0.7);
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
+        }
+    .overlay > p{
+        -webkit-transition: color 0.5s ease-out;
+        -moz-transition: color 0.5s ease-out;
+        -o-transition: color 0.5s ease-out;
+        transition: color 0.5s ease-out;
+    }
+    .overlay:hover {
+            cursor:default;
+            background-color: rgba(30,30,30,0.5);
+            }
+    
+    #serv1{
+        background: url(https://goo.gl/JXQAkM) center center;
+        background-size: cover;
+        }
+    #serv2{
+        background: url(https://goo.gl/Y5NiZz) center center;
+        background-size: cover;
+        }
+    #serv3{
+        background: url(https://goo.gl/TXl7o8) center center;
+        background-size: cover;
+        }
+    #serv4{
+        background: url(https://goo.gl/wWeHBS) center center;
+        background-size: cover;
+        }
+    #serv5{
+        background: url(https://goo.gl/07YXnM) center center;
+        background-size: cover;
+        }
+    #serv6{
+        background: url(https://goo.gl/S0HCyy) center center;
+        background-size: cover;
+        }
+    
+    
+    .ocultables{
+        width: 92%;
+        padding: 0% 4% 3% 4%;
+        margin:0% 0% 4% 0%;
+        font-size: 1em;
+        color:#4e4e4e;
+        line-height: 1em;
+        background-color: #e8e8e8;
+        float:left;
+        display:none;
+    }
+    #flechita{
+        line-height: 0.6em;
+        font-size: 1.4em;
+        color:white;
+    }
+    
+    #desc1 img{
+        width: 100%;
+        height: auto;
+        padding: 0% 4% 0% 0%;
+    }
+    
+    #marcas{
+        width: 100%;
+        height: auto;
+        padding: 0% 4% 0% 0%;
+    }
+    
+    #oferta{
+        text-decoration: none;
+        font-size: 1.3em;
+        font-weight: 400;
+        color:#ff6666;
+        padding: 1em 0em 1em 0em;
+        float:left;
+    }
+    #oferta:hover{
+        color:#ff0000;
+    }
+ 
+    #comprar #serv3{
+        background: url(https://goo.gl/1DBIs2) center center;
+    }
+    #comprar .serv{
+        margin-bottom: 0px;
+        height: 450px;
+    }
+    #comprar .service a{
+        color:#e3e3e3;
+        text-decoration: none;
+        font-size: 2.5em;
+        padding:6%;
+        -webkit-transition: color 0.5s ease-out;
+        -moz-transition: color 0.5s ease-out;
+        -o-transition: color 0.5s ease-out;
+        transition: color 0.5s ease-out;
+    }
+    
+    #comprar #textoextra{
+        font-size: 0.3em;
+        text-align: center;
+        text-transform:none;
+        font-weight: 300;
+    }
+    
+    #comprar .service a:hover{
+        color:#fff;
+        }
+    
+    #comprar{
+        padding: 4% 0% 4% 0%;
+    }
+    
+    #comprar .overlay{
+        background-color: rgba(0,0,0,0.7);
+        }
+    #comprar .overlay:hover {
+        background-color: rgba(0,0,0,0.5);
+        }
+    
+    #contacto{
+            width: 100%;
+            background-color: white;
+            float: left;
+            color: #333333;
+            display:flex;
+            margin-bottom: 80px;
+            }
+    #contacto p{
+        color: #808080;
+    }
+    
+    #datos{
+        padding: 4% 2% 4% 4%;
+        width: 40%;
+        }
+    
+    #mapa{
+        padding: 4% 4% 4% 0%;
+        width: 60%;
+        position:relative;
+    }
+    
+    #antieventos {
+        
+        cursor:default;
+        position: absolute;
+        left: 0; top: 0; right: 0; bottom: 0;
+        background-color: rgba(0,0,0,0.0);
+    }
+    
+    
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(https://3.bp.blogspot.com/-AufS0CHcpJ8/WM_kNcV4BOI/AAAAAAAAEJQ/RwzzDtCPPpgEZrAZusz5ziQJnJJpExu6QCLcB/s1600/Preloader_21.gif) center no-repeat #fff;
+    }
+
+
+/* Media Queries  88888888888888888888888888888888888888888888888888  */
+@media screen and (max-width: 600px) {
+
+	
+    header nav {
+        float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+    }
+    
+    header nav li a{
+        color:#333333;
+    }
+    
+    header{
+        background: url("");
+    }
+    
+    header h1 {
+        height: 105px;
+	    width: 240px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
+    .serv{
+        width: 92%;
+    }
+    
+    
+    #servicios, contacto, comprar {
+		float: left;
+		clear: left;
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: rgba(0, 0, 0, 0.2);
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}	
+    #visita-imagen > h2{
+        font-size: 200%;
+    }
+    #comprar .service a{
+        font-size: 1.4em;
+    }
+    
+    #contacto{
+        flex-direction: column;
+    }
+    #datos{
+        width: 92%;
+        }
+    #mapa{
+        width: 92%;
+        padding: 10% 0% 4% 4%;
+        height: 400px;
+    }
+}
+</style>
+    
+<!-- HTML  ------------------------------------------------------------------------------------  -->
+	<head>
+		<meta charset="utf-8"/>
+		<title>Mileban S.A.</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />	
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,
+                    300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://3.bp.blogspot.com/-u-MneYFcgR0/WNJk8oCrxRI/AAAAAAAAELo/athTsUps1HQJiQFJd3qUwQjeT7wP9l0wACLcB/s1600/favicon16x16-06.png" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        <!-- SLIDESHOW SCRIPT -->
+        <script>
+           window.onload = function() {
+                $("#slideshow > div:gt(0)").hide();
+
+                setInterval(function() {
+                  $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+                }, 5000);
+           }
+        </script>
+        <!-- SERVICIOS MOSTRAR/OCULTAR SCRIPT -->
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar1").click(function(){
+                    $("#desc1").slideToggle(900);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar2").click(function(){
+                    $("#desc2").slideToggle(500);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar3").click(function(){
+                    $("#desc3").slideToggle(300);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar4").click(function(){
+                    $("#desc4").slideToggle(300);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar5").click(function(){
+                    $("#desc5").slideToggle(300);
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#mostrarocultar6").click(function(){
+                    $("#desc6").slideToggle(300);
+                });
+            });
+        </script>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+        <script>
+            $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+        
+	</head>
+    
+	<body>
+		
+        <header>
+            <div id="headercontent">
+            <h1>MILEBAN</h1>
+            <nav>
+                <ul>
+                    <li><a href="#servicios" title="About">Servicios</a></li>
+                    <li><a href="#comprar" title="Work">Comprar</a></li>
+                    <li><a href="#contacto" title="Contact">Contacto</a></li>
+                </ul>
+            </nav>	
+            </div>
+        </header>
+        
+        
+		<div id="wrapper">
+		
+			
+            
+            <div id="banner">
+                <div id="slideshow">
+                   <div>
+                     <a target="_blank" href="https://goo.gl/3ExjB3"><img width="920" height="528" src="https://goo.gl/wjOj1M"></a>
+                   </div>
+                   <div>
+                     <a target="_blank" href="https://goo.gl/LOZXV4"><img width="920" height="528" src="https://goo.gl/6T4ltV"></a>
+                   </div>
+                   <div>
+                     <a target="_blank" href="https://goo.gl/Dyknxl"><img width="920" height="528" src="https://goo.gl/Jx9Qmi"></a>
+                   </div>
+                </div>
+                <div id="dummy"></div>
+            </div>
+            
+                <section id="servicios">
+                    <div id="servtitle">
+                    <p>Servicios</p>
+                    </div>
+                    <div id="serv1" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar1">Lubricentro</p>
+                        </div>
+                    </div>
+                    <div id="desc1" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Cambio de aceite y filtros.</p>
+                        <p>Revisamos todos los liquidos de su coche.</p>
+                        <p>Contamos con 3 elevadores para lubricación.</p>
+                        <p>¡Haciendo el cambio con nuestros productos la mano de obra no tiene costo!.</p>
+                        <br>
+                        <p>Tabajamos con las siguientes marcas:</p>
+                        <img id="marcas" src="https://2.bp.blogspot.com/-9M9cRwHvAsU/WNAgSNdTJyI/AAAAAAAAEJg/WVIQrzsuNLkE9aAiJk58NBBLYzBC3x5UwCLcB/s1600/marcas-lubricantes-negra.png">
+                        <a id="oferta" target="_blank" href="http://listado.mercadolibre.com.uy/lubricantes_eshop_MILEBAN+SA">¡Ver ofertas!</a>
+                        <img src="https://4.bp.blogspot.com/-kayf3iH2Tkw/WM_VRiJllYI/AAAAAAAAEI8/TJYZBR_fUMI1SH0MrbBEPRHUqlgEGMNSwCLcB/s1600/local.jpg">
+                    </div>
+                    <div id="serv2" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar2">Neumáticos</p>
+                        </div>
+                    </div>
+                    <div id="desc2" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Contamos con neumáticos nuevos, con garantía.</p>
+                        <p>Si no sabe que medida de cubierta lleva su coche ¡consultenos!, estamos para asesorarle.</p>
+                        <p>Comprando sus cubiertas en nuestro local, la colocación y el balanceo son gratis.</p>
+                        <p>Trabajamos con las siguientes marcas:</p>
+                        <img id="marcas" src="https://4.bp.blogspot.com/-od4aFOsPO2M/WNAmQoQ2pTI/AAAAAAAAEJ0/vxafCVs-oXc0TndFb772tZ7NdoCVnwt5ACEw/s1600/marcas-neumaticos.png">
+                        <a id="oferta" target="_blank" href="http://vehiculos.mercadolibre.com.uy/neumaticos/_eshop_MILEBAN+SA">¡Ver ofertas!</a>
+                    </div>
+                    <div id="serv3" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar3">Alineación y balanceo</p>
+                        </div>
+                    </div>
+                    <div id="desc3" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Alineación y balanceo computalizados, para autos y camionetas.</p>
+                        <p>¡Realice su reserva con tiempo para evitar demoras! llamando al 098126971.</p>
+                        <a id="oferta" target="_blank" href="http://servicio.mercadolibre.com.uy/MLU-444103718-alineacion-balanceo-rotacion-combo-autos-y-camionetas-_JM">¡Ver ofertas!</a>
+                    </div>
+                    <div id="serv4" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar4">Baterías</p>
+                        </div>
+                    </div>
+                    <div id="desc4" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Tenemos la batería para su coche, ¡Consulte por su amperaje y medidas!.</p>
+                        <p>Todas nuestras baterías son nuevas y con garantía.</p>
+                        <p>Trabajamos con las siguientes marcas:</p>
+                        <img id="marcas" src="https://1.bp.blogspot.com/-MehsGZkwtFs/WNAnNSH6N6I/AAAAAAAAEJ8/nG8qgx5avvwZrjB2VPWRejn_wQfhGzy1ACLcB/s1600/marcas-baterias.png">
+                        <a id="oferta" target="_blank" href="http://autos.mercadolibre.com.uy/repuestos-autos-encendido/_eshop_MILEBAN+SA">¡Ver ofertas!</a>
+                    </div>
+                    <div id="serv5" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar5">Minimercado</p>
+                        </div>
+                    </div>
+                    <div id="desc5" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Disfrute de nuestro completo minimercado abierto las 24 Horas.</p>
+                        <p>Bebidas / Alimentos / Congelados / Recargas electrónicas.</p>
+                    </div>
+                    <div id="serv6" class="serv">
+                        <div class="service overlay">
+                            <p id="mostrarocultar6">Estación de servicio</p>
+                        </div>
+                    </div>
+                    <div id="desc6" class="ocultables">
+                        <p id="flechita">▼</p>
+                        <p>Ancap abierta las 24 horas.</p>
+                        <p>Teléfono: 2400 4446 int 14.</p>
+                    </div>
+                </section>
+            
+                <section id="comprar">
+                    <div id="serv3" class="serv">
+                        <div class="service overlay">
+                            <a target="_blank" href="http://eshops.mercadolibre.com.uy/MILEBAN+SA">
+                                <p>Visita</p>
+                                <p>nuestro</p>
+                                <p>E-Shop</p>
+                                <span id="textoextra">para comprar cualquiera de nuestros productos!</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            
+            
+			<div id="contacto">
+                <div id="datos">
+                    <h2>CONTACTO</h2>
+                    <br>
+                    <p>Democracia 1760 esq. Daniel Muñoz.</p>
+                    <p>Cordón, Montevideo.</p>
+                    <p>Teléfono 2400 4446.</p>
+                    <p>Celular 098126971.</p>
+                    <br>
+                    <h2>HORARIO DE ATENCIÓN</h2>
+                    <br>
+                    <p>De Lunes a Viernes de 8 a 17:30</p>
+                    <p>y Sabados de 7:30 a 13:30 Hrs.</p>
+                    <br>
+                    <h2>ENVÍOS</h2>
+                    <br>
+                    <p>Realizamos envíos al interior del país sin costo, por agencias, previo giro (Abitab,Brou, Itaú y Scotia Bank).</p>
+                    <p>Dentro de Montevideo las compras se retiran en nuestro local.</p>
+                </div>
+                
+                <div id="mapa">
+                        <div id="antieventos" onclick="style.display='none'"></div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4627.876951854511!2d-56.17658479926677!3d-34.896330421575236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x699c5dced28c8203!2sMILEBAN+S.A.!5e0!3m2!1ses!2suy!4v1489836169512" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+		</div>
+
+	</body>
+    <div class="se-pre-con"></div>
+</html>
